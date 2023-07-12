@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# zombie list processes
+# list of zombie processes
 zombies=$(ps aux | awk '{ if ($8 == "Z") { print $2 } }')
 
 # Kill each zombie process
